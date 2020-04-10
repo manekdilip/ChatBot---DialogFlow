@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WdZ-P9-a25">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChatBotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhS-zO-Y1A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vu1-bc-jVw">
+                                <rect key="frame" x="16" y="563" width="343" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="send" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Pizza order chatbot. Just begin by saying &quot;Hi!&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtI-5y-xJs">
+                                <rect key="frame" x="16" y="0.0" width="343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="8MP-a7-HwT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWc-qw-PfM">
+                                <rect key="frame" x="75" y="605" width="225" height="37"/>
+                                <color key="backgroundColor" red="0.73503643269999996" green="0.22522109749999999" blue="0.25308221580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Send Message to Agent">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSC-c4-5Bf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vu1-bc-jVw" firstAttribute="centerX" secondItem="hhS-zO-Y1A" secondAttribute="centerX" id="8PR-8V-FvO"/>
+                            <constraint firstItem="kWc-qw-PfM" firstAttribute="leading" secondItem="WG6-Lb-Um9" secondAttribute="leading" constant="75" id="8of-eq-Osb"/>
+                            <constraint firstItem="kWc-qw-PfM" firstAttribute="centerX" secondItem="hhS-zO-Y1A" secondAttribute="centerX" id="Ck6-Tf-dLs"/>
+                            <constraint firstItem="WG6-Lb-Um9" firstAttribute="trailing" secondItem="vu1-bc-jVw" secondAttribute="trailing" constant="16" id="Kj8-h3-0sW"/>
+                            <constraint firstItem="WG6-Lb-Um9" firstAttribute="trailing" secondItem="vtI-5y-xJs" secondAttribute="trailing" constant="16" id="KxM-BP-a9E"/>
+                            <constraint firstItem="vtI-5y-xJs" firstAttribute="top" secondItem="WG6-Lb-Um9" secondAttribute="top" id="Olk-My-qwn"/>
+                            <constraint firstItem="WG6-Lb-Um9" firstAttribute="trailing" secondItem="kWc-qw-PfM" secondAttribute="trailing" constant="75" id="TOT-Ua-zvJ"/>
+                            <constraint firstItem="vtI-5y-xJs" firstAttribute="leading" secondItem="WG6-Lb-Um9" secondAttribute="leading" constant="16" id="baY-72-Xth"/>
+                            <constraint firstItem="vtI-5y-xJs" firstAttribute="centerX" secondItem="hhS-zO-Y1A" secondAttribute="centerX" id="d1s-jr-eKP"/>
+                            <constraint firstItem="vu1-bc-jVw" firstAttribute="leading" secondItem="WG6-Lb-Um9" secondAttribute="leading" constant="16" id="lAw-Ph-Hwk"/>
+                            <constraint firstItem="kWc-qw-PfM" firstAttribute="top" secondItem="vu1-bc-jVw" secondAttribute="bottom" constant="8" id="m3c-5A-Yes"/>
+                            <constraint firstItem="WG6-Lb-Um9" firstAttribute="bottom" secondItem="kWc-qw-PfM" secondAttribute="bottom" constant="25" id="xGT-7v-cSH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WG6-Lb-Um9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Fv-s4-Mde"/>
+                    <connections>
+                        <outlet property="lblResponse" destination="vtI-5y-xJs" id="E6i-n4-dxG"/>
+                        <outlet property="txtMessage" destination="vu1-bc-jVw" id="DdX-HI-Hjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p3c-nB-yLZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WdZ-P9-a25" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d5P-a2-2hg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2GV-uf-WEQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAu-4d-Cbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
